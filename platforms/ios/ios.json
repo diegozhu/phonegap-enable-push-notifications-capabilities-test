@@ -1,0 +1,65 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"LeanPush\"><param name=\"ios-package\" value=\"CDVLeanPush\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"LeanAnalytics\"><param name=\"ios-package\" value=\"CDVLeanAnalytics\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"leancloud-appid\" value=\"hpEH2UdEwhl9JAMXNyaWNbr3-gzGzoHsz\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"leancloud-appkey\" value=\"iO22xNowjsmtbAREk368Rpcr\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-leancloud": {
+            "LEAN_APP_ID": "hpEH2UdEwhl9JAMXNyaWNbr3-gzGzoHsz",
+            "LEAN_APP_KEY": "iO22xNowjsmtbAREk368Rpcr",
+            "PACKAGE_NAME": "com.philips.h2h.bama.beta"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.philips.h2h.bama.beta"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "cordova-plugin-leancloud.LeanPush",
+            "file": "plugins/cordova-plugin-leancloud/www/LeanPush.js",
+            "pluginId": "cordova-plugin-leancloud",
+            "clobbers": [
+                "LeanPush"
+            ]
+        },
+        {
+            "id": "cordova-plugin-leancloud.LeanAnalytics",
+            "file": "plugins/cordova-plugin-leancloud/www/LeanAnalytics.js",
+            "pluginId": "cordova-plugin-leancloud",
+            "clobbers": [
+                "LeanAnalytics"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-leancloud": "0.3.4",
+        "cordova-plugin-whitelist": "1.3.2"
+    }
+}

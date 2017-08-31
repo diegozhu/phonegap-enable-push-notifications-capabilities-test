@@ -1,0 +1,47 @@
+{
+    "name": "cordova-plugin-leancloud",
+    "version": "0.5.0-alpha.3",
+    "description": "A Cordova plugin for LeanCloud.",
+    "cordova": {
+        "id": "cordova-plugin-leancloud",
+        "platforms": [
+            "android",
+            "ios"
+        ],
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-leancloud": {
+                "LEAN_APP_ID": "hpEH2UdEwhl9JAMXNyaWNbr3-gzGzoHsz",
+                "LEAN_APP_KEY": "iO22xNowjsmtbAREk368Rpcr"
+            }
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wujun4code/cordova-plugin-leancloud.git"
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-ios",
+        "cordova-android",
+        "leancloud",
+        "push",
+        "analytics"
+    ],
+    "author": "Wu Jun",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/BenBBear/cordova-plugin-leanpush/issues"
+    },
+    "homepage": "https://github.com/BenBBear/cordova-plugin-leancloud",
+    "devDependencies": {
+        "thunks": "^3.5.1",
+        "xml2js": "^0.4.12"
+    },
+    "typings": "./src/index.d.ts",
+    "types": "./src/index.d.ts",
+    "dependencies": {
+        "cordova-plugin-whitelist": "1",
+        "cordova-plugin-leancloud": "bama-cordova-plugins/cordova-plugin-leancloud"
+    }
+}
